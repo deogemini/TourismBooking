@@ -3,7 +3,7 @@
 if(isset($_POST['submit'])){
 	
 	include_once 'db.php';
-	include 'index.js';
+	//include 'index.js';
 
 	$first = mysqli_real_escape_string($conn, $_POST['first']);
 	$last = mysqli_real_escape_string($conn, $_POST['last']);
@@ -46,15 +46,15 @@ if(isset($_POST['submit'])){
 	//Hashing the password
 	//$hashpwd= password_hash($pwd, PASSWORD_DEFAULT);
 	//Insert the user into the database
-	$sql = "INSERT INTO users(firstname,lastname,email, password) VALUES ('$first' ,'$last', '$email', '$pwd')";
+	$sql = "INSERT INTO user(firstname,lastname,email, password) VALUES ('$first' ,'$last', '$email', '$pwd')";
 	 $ins = mysqli_query($conn, $sql);
 
 	// $ins = mysqli_query($conn, $sql);
-	 if($ins){
-	 	header("Location: index.php");
+	 $_SESSION['success']="Success! You are successfully Registered";	
+	  	header("Location: /Allinoneproject/register/register/index.php");
 	 	 	exit();
 
-	 }
+
 	 // else{ echo "Not saved";}
 	 //header("Location: index.php");
 	// exit();

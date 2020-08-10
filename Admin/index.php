@@ -38,8 +38,8 @@ if(isset($_POST['submit'])){
 					$_SESSION['email']  = $row['email'];
 					$_SESSION['pwd']  = $row['password'];
 
-					$_SESSION['success']="Success! You are successfully login";
-					header("Location: /Allinoneproject/Booking/Booking.php");
+					$_SESSION['success']="Success! You are successfully loged As Admin";
+					header("Location: /Allinoneproject/Admin/Adminpage.php");
 					exit();
 
 				}

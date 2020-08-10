@@ -1,5 +1,7 @@
+
+
 <script>
 
 
-window.alert(" Registration is completely");
+window.alert(" Registration  is completely");
 </script>

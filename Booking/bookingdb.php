@@ -7,8 +7,9 @@ $dbUsername = "root";
 $dbPassword = "";
 $dbName = "all_in_one";
 
-$conn= mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+$conn= new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
 
-if(!$conn){
-		die('Database not connected');
+//check connection
+if(mysqli_connection_error()){
+		die('Database connection failed:'.mysqli_connection_error());
 }

@@ -81,36 +81,18 @@ if(isset($_POST['submit'])){
 				</div>
 				<form action="" method="POST">
 					<h3>Welcome to login page</h3>
-					<!-- <div class="form-group">
-						<input type="text" placeholder="First Name" class="form-control">
-						<input type="text" placeholder="Last Name" class="form-control">
-					</div> -->
-					<!-- <div class="form-wrapper">
-						<input type="text" placeholder="Username" class="form-control">
-						<i class="zmdi zmdi-account"></i>
-					</div>
- -->					<div class="form-wrapper">
+					
+					<div class="form-wrapper">
 						<input type="text" name="email" placeholder="Email Address" class="form-control">
 						<i class="zmdi zmdi-email"></i>
 					</div>
-					<!-- <div class="form-wrapper">
-						<select name="" id="" class="form-control">
-							<option value="" disabled selected>Gender</option>
-							<option value="male">Male</option>
-							<option value="femal">Female</option>
-							<option value="other">Other</option>
- -->						<!-- </select>
-						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
-					</div> -->
+				
  					<div class="form-wrapper">
 						<input type="password" 
 						name = "pwd" placeholder="Password" class="form-control">
 						<i class="zmdi zmdi-lock"></i>
 					</div>
-					<!-- <div class="form-wrapper">
-						<input type="password" placeholder="Confirm Password" class="form-control">
-						<i class="zmdi zmdi-lock"></i>
-					</div> -->
+					
 					<button name ="submit" class="btn">Press To Login
 						<i class="zmdi zmdi-arrow-right"></i>
 					</button>
@@ -118,5 +100,5 @@ if(isset($_POST['submit'])){
 			</div>
 		</div>
 		
-	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	</body>
 </html>
